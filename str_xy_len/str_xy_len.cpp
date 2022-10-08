@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int count(char* string, char x, char y) {
+/*int count(char* string, char x, char y) {
 	int length = strlen(string);
 	int flag = 0; // 0 - didn't meet, 1 - already met
 	int counter = -1;
@@ -18,7 +18,19 @@ int count(char* string, char x, char y) {
 			} else if (cur == '0') { counter++; }
 	}
 	return max_counter;
+}*/
+
+int count(char* string, char x, char y) {
+	int length = strlen(string), counter = -1, max_counter = 1, flag = 0; // 0 - didn't meet, 1 - already met
+	for (int i = 0; i < length; i++) 
+		if (flag == 0 && (string[i] == x || string[i] == y)) {
+			flag = 1;
+			counter = 1;
+		} else if (string[i] == x || string[i] == y) { if (max_counter < counter) max_counter = counter; }
+		else if (string[i] == '0') { counter++; }
+	return max_counter;
 }
+
 
 int main() {
 	char string1[] = "000XY00X000";

@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="barier.cpp" />
     <ClCompile Include="binary.cpp" />
     <ClCompile Include="linear.cpp" />
     <ClCompile Include="types_of_searching.cpp" />

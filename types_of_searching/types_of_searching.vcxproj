@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aa57ce39-2d09-4886-88a8-b670ae1957b9}</ProjectGuid>
-    <RootNamespace>search</RootNamespace>
+    <ProjectGuid>{2de07abb-5ebb-4eb6-9562-3aa9e98f51ba}</ProjectGuid>
+    <RootNamespace>typesofsearching</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>sorting</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,14 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bubble.cpp" />
-    <ClCompile Include="indsert.cpp" />
-    <ClCompile Include="quick.cpp" />
-    <ClCompile Include="sorting.cpp" />
-    <ClCompile Include="select.cpp" />
+    <ClCompile Include="binary.cpp" />
+    <ClCompile Include="linear.cpp" />
+    <ClCompile Include="types_of_searching.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sorting_h.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

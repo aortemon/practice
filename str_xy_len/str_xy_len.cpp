@@ -37,5 +37,4 @@ int main() {
 	printf("%d ", count(string1, 'X', 'Y'));
 	char string2[] = "00X00Y00Y00Y";
 	printf("%d", count(string2, 'X', 'Y'));
-
 }

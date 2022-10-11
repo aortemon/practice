@@ -18,9 +18,7 @@ void reverse(int n, int* array) {
 }
 
 int is_win(int n, int* needed, int* cur) {
-	for (int i = 0; i < n; i++) {
-		if (needed[i] != cur[i]) return 1;
-	}
+	for (int i = 0; i < n; i++) if (needed[i] != cur[i]) return 1;
 	return 0;
 }
 
@@ -32,19 +30,11 @@ int process(int n, int* needed, int cur, int playing) {
 	}
 	reverse(n, recieved);
 	int cows = 0, bulls = 0,  i, j;
-	for (i = 0; i < n; i++) {
-		if (needed[i] == recieved[i]) bulls++;
-		else {
-			for (j = 0; j < n; j++) {
-				if (needed[i] == recieved[j]) cows++;
-			}
-
-		}
-	}
+	for (i = 0; i < n; i++) if (needed[i] == recieved[i]) bulls++; else for (j = 0; j < n; j++) if (needed[i] == recieved[j]) cows++;
+	
 
 	if (!is_win(n, needed, recieved)) {
 		printf(" You won!");
-		playing = 0;
 		return 0;
 	}
 

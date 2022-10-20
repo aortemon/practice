@@ -15,17 +15,16 @@ int* create_array(int length) {
 
 
 int main() {
-	/*int* arr = create_array(SIZE);
+	int* arr = create_array(SIZE);
 	printf("\n\nOutput: \n");
 	for (int i = 0; i < SIZE; i++) printf(">>> %d\n", arr[i]);
-	free(arr);*/
-	unsigned int x = 234567891;
+	free(arr);
+
+
+	/*unsigned int x = 234567891;
 	printf("%d\n", x);
 	unsigned int y = x << 8;
 	printf("%d\n", y);
 	unsigned int z = y >> 24;
-	printf("%d\n", z);
-
-
-
+	printf("%d\n", z);*/
 }

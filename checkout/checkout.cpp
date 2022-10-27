@@ -73,7 +73,7 @@ int main() {
 		1004, "Сахар", 100, 50
 	};
 	int bar;
-	struct product cur {};
+	struct product cur{};
 	struct receipt* rec{};
 	rec = (receipt*)malloc(2*sizeof(receipt));
 	int length = 1;

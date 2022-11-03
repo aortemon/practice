@@ -8,12 +8,7 @@ int main() {
 	int len = 1; // переменная для сохранения длины введенной последовательности
 	str = (char*)malloc(sizeof(char)); // резервируем место в памяти для одного символа, в последсвтии будем расширять
 	printf("Please, input the string: \n");
-	while ((c = getchar()) != '\n') { // вводим поток
-		str[len - 1] = c;
-		len++;
-		str = (char*)realloc(str, len); //берем еще sizeof(char) памяти для следующего символа, сохраняем
-	}
-	str[len - 1] = '\0'; // формальные издержки
+	; // формальные издержки
 
 	int words = 0, nums = 0;
 	char temp, prev;

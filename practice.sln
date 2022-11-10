@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "barier_search", "barier_sea
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "structs", "structs\structs.vcxproj", "{FF94ABB2-B5F3-487E-8330-5C1C2983DD26}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "file_manager", "file_manager\file_manager.vcxproj", "{043ED788-AB91-48A4-8D65-08B3A99822F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{FF94ABB2-B5F3-487E-8330-5C1C2983DD26}.Release|x64.Build.0 = Release|x64
 		{FF94ABB2-B5F3-487E-8330-5C1C2983DD26}.Release|x86.ActiveCfg = Release|Win32
 		{FF94ABB2-B5F3-487E-8330-5C1C2983DD26}.Release|x86.Build.0 = Release|Win32
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Debug|x64.ActiveCfg = Debug|x64
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Debug|x64.Build.0 = Debug|x64
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Debug|x86.ActiveCfg = Debug|Win32
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Debug|x86.Build.0 = Debug|Win32
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Release|x64.ActiveCfg = Release|x64
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Release|x64.Build.0 = Release|x64
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Release|x86.ActiveCfg = Release|Win32
+		{043ED788-AB91-48A4-8D65-08B3A99822F7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

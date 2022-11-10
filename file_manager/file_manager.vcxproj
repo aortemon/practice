@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ff94abb2-b5f3-487e-8330-5c1c2983dd26}</ProjectGuid>
-    <RootNamespace>structs</RootNamespace>
+    <ProjectGuid>{043ed788-ab91-48a4-8d65-08b3a99822f7}</ProjectGuid>
+    <RootNamespace>filemanager</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,8 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bubble.c" />
+    <ClCompile Include="console_settings.c" />
+    <ClCompile Include="file_manager.c" />
+    <ClCompile Include="hoara.c" />
+    <ClCompile Include="insertion.c" />
+    <ClCompile Include="merge.c" />
+    <ClCompile Include="selection.c" />
+    <ClCompile Include="settings_funcs.c" />
+    <ClCompile Include="shell.c" />
     <ClCompile Include="show_files.c" />
-    <ClCompile Include="structs.c" />
+    <ClCompile Include="submenu.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

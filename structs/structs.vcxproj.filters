@@ -18,5 +18,8 @@
     <ClCompile Include="structs.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="show_files.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -34,3 +34,10 @@ void get_user_move(int** board, int user_sign) {
 	struct COORD xy = { row, col };
 	set(board, xy, user_sign);
 }
+
+/*
+Выбор крестика или нолика
+Игра
+Сыграем еще раз? Если да, то сначала, иначе продолжить
+Конец
+*/

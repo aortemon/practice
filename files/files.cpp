@@ -24,7 +24,7 @@ int main() {
 	int size;
 	fseek(f, 0, SEEK_END);
 	size = ftell(f);
-	//fseek(f, 0, SEEK_SET);
+	fseek(f, 0, SEEK_SET);
 	char buf(size);
 
 	while (!feof(f)) {

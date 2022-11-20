@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <Windows.h>
 
 #include "Header.h"
 
@@ -14,6 +15,11 @@ int** board_init() {
 		for (int j = 0; j < SIZE; j++) board[i][j] = 0;
 	}
 	return board;
+}
+
+
+void set(int** board, COORD xy, int sign) {
+	board[xy.X][xy.Y] = sign;
 }
 
 int is_win(int** board) {
@@ -49,10 +55,6 @@ int is_draw(int** board) {
 		for (int j = 0; j < SIZE; j++) if (board[i][j] == 0) return 0;
 	}
 	return 1;
-}
-
-void set(int** board, struct COORD xy, int sign) {
-	board[xy.x][xy.y] = sign;
 }
 
 void comp_move(int** board, int comp_sign, int user_sign) {
